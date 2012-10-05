@@ -1,0 +1,81 @@
+<div id="center">
+<div id="logo">
+<div id="menu">
+	<%= link_to 'HOME', root_url  %> |
+	<%= link_to "QUIENES SOMOS", about_path %> |
+	<%= link_to "PROGRAMACION", programacion_path %> |
+	<%= link_to "CONTACTO", contacto_path %> |
+	<% if current_user %>
+	<%= link_to "RADIO", radio_path %> 
+	<% end %>
+</div>
+<div class="clear"></div>
+
+<div id="login_menu" class="gallery">
+ <% if current_user %>
+           <%= link_to "Salir", destroy_user_session_path, :method => :delete %>
+        <% else %>
+            <%= link_to('Accesar', new_user_session_path)  %>   
+        <% end %>
+</div>
+</div>
+<div id="content">
+<h1>¿Quienes Somos?</h1> 
+<p>
+Somos un medio musical alternativo que busca la satisfacción de las demandas y exigencias del mercado empresarial y de servicios, proponiendo soluciones en audio de manera ambiental con nuestros diferentes géneros para diversos sectores y sus actividades.
+</p>
+
+<p>
+Somos una empresa joven conformada por profesionales con amplios conocimientos en ingeniería, producción, dirección y administración de medios de comunicación, consientes de las necesidades específicas de la dinámica 2.0 y su poder de penetración en las masas, por lo que garantizamos además de la calidad en nuestros servicios, la calidad en su transmisión.
+</p>
+
+<p>
+Sala Lounge Music es un ambiente, un espacio, un estilo de vida; es una oportunidad para el desarrollo de todas las actividades de su empresa, negocio, institución y servicio, con el acompañamiento musical sugerido por un equipo de profesionales a su servicio.
+</p>
+
+<h1>Nuestra Misión: </h1>
+Dar un confort musical.
+</br>
+<h1>Nuestra Visión: </h1>
+Ser los mejores y ofrecer la mejor programación musical, dando un bienestar ha todos nuestros oyentes (tus clientes)
+</br>
+<p>
+<h1>Nuestra Filosofía:</h1>
+- Todo puede ser mejorado
+</br>
+- La mejor solución no tiene que ser la más costosa
+</br>
+- Sabemos que la confianza es algo importante por ello damos productos de calidad
+</br>
+- Nosotros trasmitimos seguridad, nuestro trabajo potencialidad.
+</br>
+- La combinación de un líder -
+</br>
+- Nuestro profesionalismo es vital
+</br></br>
+No vendemos productos, ofrecemos soluciones ambientales, no defendemos una solo estilo de música, sencillamente, buscamos el mejor confort musical para tu empresa.
+</br>
+</p>
+<h1>Nuestros Valores</h1>
+<b>Creatividad. </b>Nuevos caminos, ángulos inesperados y soluciones únicas.
+</br>
+<b>Innovación. </b>Cambiar percepciones es un arte.
+</br>
+<b>Confidencialidad.</b> Guardar el secreto y convertir el éxito del cliente en dominio público.
+</br>
+<b>Puntualidad.</b> La puntualidad es el camino más corto para lograr un objetivo.
+</br>
+<b>Experiencia. </b>Continuar aprendiendo de las páginas que más enseñan.
+</br>
+<b>Seriedad. </b>Hacer lo correcto de la mejor manera.
+</br>
+<b>Compromiso. </b>Entregar la solución esperada de una forma sorprendente.
+</br>
+<h1>Clientes Satisfechos</h1>
+Estamos convencidos que un cliente no es aquel a quien solo compra una sola vez, Un cliente, es el que ha quedado satisfecho con nuestras soluciones, nos prefiere y nos puede recomendar. Siempre buscamos una relación a largo plazo en donde ambos ganemos.
+</br>
+</div>
+<div id="footer_img"></div>
+<div id="footer_player"></div>
+<div id="footer">Todos los derechos reservados &copy; <%= Time.now.strftime("%Y") %> salaloungemusic.com</div>
+</div>

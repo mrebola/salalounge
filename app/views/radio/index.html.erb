@@ -1,0 +1,46 @@
+<%= javascript_include_tag "swfobject.js" %>
+<div id="center">
+<div id="logo">
+<div id="menu">
+    <%= link_to 'HOME', root_url  %> |
+    <%= link_to "QUIENES SOMOS", about_path %> |
+    <%= link_to "PROGRAMACION", programacion_path %> |
+    <%= link_to "CONTACTO", contacto_path %> |
+    <% if current_user %>
+    <%= link_to "RADIO", radio_path %> 
+    <% end %>
+</div>
+<div class="clear"></div>
+
+<div id="login_menu" class="gallery">
+ <% if current_user %>
+           <%= link_to "Salir", destroy_user_session_path, :method => :delete %>
+        <% else %>
+            <%= link_to('Accesar', new_user_session_path)  %>   
+        <% end %>
+</div>
+</div>
+<div id="content">
+
+<h1>
+Radio
+</h1> 
+
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet dolor risus, vitae gravida leo. Maecenas et libero nisi, sit amet sodales purus. Phasellus leo lectus, euismod vel aliquet lacinia, sollicitudin a neque. Nullam convallis, arcu ut vulputate hendrerit, mi nunc rutrum sem, ut pretium lectus elit at mauris. Vestibulum scelerisque .</p>
+</div>
+<div id="footer_img"></div>
+<div id="footer_player">
+<div id="container"><a href="http://www.macromedia.com/go/getflashplayer">Obten Adobe Flash Player aquí</a></div>
+  <script type="text/javascript">
+var s1 = new SWFObject("http://nopalhost.net/alex/player.swf","ply","328","20","9","#FFFFFF");
+s1.addParam("allowfullscreen","true");
+s1.addParam("allowscriptaccess","always");
+s1.addParam("flashvars","file=http://76.73.2.210:9998/;stream.nsv&type=mp3&volume=90&autostart=true");
+s1.write("container");
+</script>
+</div>
+<div id="footer">Todos los derechos reservados &copy; <%= Time.now.strftime("%Y") %>
+ salaloungemusic.com</div>
+</div>
+

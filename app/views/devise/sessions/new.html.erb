@@ -1,0 +1,27 @@
+<%= stylesheet_link_tag "bootstrap" %>
+<%= javascript_include_tag "bootstrap-tooltip" %>
+<h2>Login</h2>
+<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+<form class="form-horizontal">
+  <div class="control-group">
+    <label class="control-label" for="inputEmail"><%= f.label :email %></label>
+    <div class="controls">
+        <%= f.email_field :email %>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputPassword"><%= f.label :password %></label>
+    <div class="controls">
+       <%= f.password_field :password %>
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+      <label class="checkbox">
+        
+      <button type="submit" class="btn"><%= f.submit "Sign in" %></button>
+    </div>
+  </div>
+
+</form>  
+<% end %>

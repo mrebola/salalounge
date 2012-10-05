@@ -1,0 +1,31 @@
+<div id="center">
+<div id="logo">
+<div id="menu">
+	<%= link_to 'HOME', root_url  %> |
+	<%= link_to "QUIENES SOMOS", about_path %> |
+	<%= link_to "PROGRAMACION", programacion_path %> |
+	<%= link_to "CONTACTO", contacto_path %> |
+	<% if current_user %>
+	<%= link_to "RADIO", radio_path %> 
+	<% end %>
+</div>
+<div class="clear"></div>
+
+<div id="login_menu" class="gallery">
+ <% if current_user %>
+           <%= link_to "Salir", destroy_user_session_path, :method => :delete %>
+        <% else %>
+            <%= link_to('Accesar', new_user_session_path)  %>   
+        <% end %>
+</div>
+</div>
+<div id="content">
+<h1>Contacto</h1> 
+
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet dolor risus, vitae gravida leo. Maecenas et libero nisi, sit amet sodales purus. Phasellus leo lectus, euismod vel aliquet lacinia, sollicitudin a neque. Nullam convallis, arcu ut vulputate hendrerit, mi nunc rutrum sem, ut pretium lectus elit at mauris. Vestibulum scelerisque .</p>
+</div>
+<div id="footer_img"></div>
+<div id="footer_player"></div>
+<div id="footer">Todos los derechos reservados &copy; <%= Time.now.strftime("%Y") %> salaloungemusic.com</div>
+</div>

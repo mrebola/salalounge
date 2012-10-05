@@ -1,0 +1,99 @@
+<div id="center">
+<div id="logo">
+<div id="menu">
+	<%= link_to 'HOME', root_url  %> |
+	<%= link_to "QUIENES SOMOS", about_path %> |
+	<%= link_to "PROGRAMACION", programacion_path %> |
+	<%= link_to "CONTACTO", contacto_path %> |
+	<% if current_user %>
+	<%= link_to "RADIO", radio_path %> 
+	<% end %>
+</div>
+<div class="clear"></div>
+
+<div id="login_menu" class="gallery">
+ <% if current_user %>
+           <%= link_to "Salir", destroy_user_session_path, :method => :delete %>
+        <% else %>
+            <%= link_to('Accesar', new_user_session_path)  %>   
+        <% end %>
+</div>
+</div>
+<div id="content">
+
+<h1>ELECTROTANGO</h1> 
+<p>
+El ElectroTango es un estilo musical creado por la fusión entre el tango y la música electrónica. Entre los precursores de este género pueden encontrarse a Gotan Project formada en el año 2000 cuyos integrantes son argentinos, uruguayos, suizos y franceses, y posteriormente Bajofondo, integrada por músicos argentinos y uruguayos, Buenos Aires Tango beats, MetroTango, San Telmo LOunge, UltraTango entre otros.
+Las bandas que cultivan este género han tenido una gran acogida con millones de copias vendidas en todo el mundo, así como distintos reconocimientos a nivel internacional
+</p>
+
+<h1>JAZZ</h1> 
+<p>
+El jazz es un género musical nacido a finales del siglo XIX en Estados Unidos que se expandió de forma global a lo largo de todo el siglo XX.
+Entre los muchos intentos de delimitar y describir el complejo fenómeno del jazz, el crítico y estudioso alemán Joachim-Ernst Berendt, en su obra clásica El Jazz: De Nueva Orleans al Jazz Rock, nos dice:
+El jazz es una forma de arte musical que se originó en los Estados Unidos mediante la confrontación de los negros con la música europea. La instrumentación, melodía y armonía del jazz se derivan principalmente de la tradición musical de Occidente. El ritmo, el fraseo y la producción de sonido, y los elementos de armonía de blues se derivan de la música africana y del concepto musical de los afroamericanos
+</p>
+
+<h1>ACID JAZZ</h1> 
+<p>
+Acid jazz es un género musical que combina elementos de jazz, funk y hip-hop. Se desarrolló en el Reino Unido durante los años 1980 y 1990 y podría ser visto como virar el sonido de jazz-funk en electrónica de baile:. Canguelo del jazz músicos como Roy Ayers, Donald Byrd y verde subvención se acredita a menudo como precursores del jazz ácido. Acid jazz también ha experimentado influencias menores de soul, house y disco.
+Mientras que el acid jazz a menudo contiene varios tipos de composición electrónica, es igual de probable que se reproduce en vivo por músicos, que a menudo exhiben interpretación jazz como parte de su desempeño. Las composiciones de grupos como Jamiroquai, Galliano, Urban Species, The Brand New Heavies y Incognito menudo cuentan con estructuras de acordes por lo general asociados con la música jazz.
+El acid jazz "movimiento" también es visto como un renacimiento de la fusión jazz-funk, jazz o jazz soul.
+</p>
+
+<h1>BOSSA NOVA</h1> 
+<p>
+La Bossa Nova fue la primera Gran revolución en términos de estructuras armónicas, melódicas y rítmicas y el primer lenguaje moderno que se utilizó en Brasil para hacer música. También por primera vez en el siglo Brasil exportó a los Estados Unidos y a Europa un movimiento musical, y no sólo figuras exitosas, pero aisladas. La Bossa Nova fue un movimiento orgánico, completo en sí mismo, acabado, que surgió de manera espontánea, natural, gracias a la convergencia de diferentes factores.
+
+En 1946, el pianista y compositor Dick Farney, después de haber trabajado durante varios años en los Estados Unidos, grabó en Brasil, para el sello "Continental", un tema que marcó el comienzo de una nueva era: el samba titulado "Copacabana", de Joao de Barros y Alberto Ribeiro.
+</p>
+
+<h1>LOUNGE</h1> 
+<p>
+El lounge es un género de música, una variación, principalmente del jazz, que se conoce desde la década de 1950. Se caracterizaba por presentar ritmos sensuales y desprovistos de una instrumentación recargada. Está basada en los abundantes sonidos del Swing y el Big Band de la década de 1950, combinado con ideas del worldbeat, para convertirse en un híbrido sonoro muy placentero y de fácil escucha. El lounge es sobre todo un modo de interpretación, por el que pueden pasar géneros tan diversos como jazz, bossa nova, mambo, chachachá, música étnica o electrónica. Se debe considerar como padre de este.
+
+El término lounge podría traducirse al castellano como vestíbulo o salón de descanso; el lugar de un hotel donde uno puede sentarse a beber algo, conversar y escuchar música suave. Por extensión, la palabra pasó a designar a toda una cultura dedicada al placer, la comodidad y la elegancia. Si hoy la estética lounge es una opción de moda, se lo debe a la industria discográfica de fines de la década del 90'.
+</p>
+
+<h1>CHILL OUT</h1> 
+<p>
+Estilo musical normalmente compuesto con instrumentos electrónicos, que pretende relajar al oyente. Chill out, en inglés significa: enfriar.
+El "Chill Out" se caracteriza ante todo por la forma suave en que se combinan o remezclan algunos géneros tales como ópera, Techno, música ambiental, rock y algunos otros géneros relacionados con el uso de sintetizadores, cajas de ritmos y efectos de sonido. Junto con el ambient y el lounge (éste es una variación del house), estos tres géneros han adoptado una rica variedad étnica que ha convertido al Chill Out en una subcultura que ha incubado una serie de adeptos que hallan en la armonía de los sonidos, la exaltación de los sentidos y una sublime forma de sentir la música.
+El concepto llegó a la música Clásica tras haberse editado un álbum doble llamado "Chill: Classical" que, aparte de composiciones y coros de ópera, contiene algunas piezas instrumentales de Beethoven, Schubert, Vangelis, entre otros.
+</p>
+
+<h1>INSTRUMENTAL</h1> 
+<p>
+Los instrumentos musicales siempre han existido, pero la música vocal dominó en todas partes hasta el siglo XVI, siendo en este último cuando alcanzó su máximo apogeo.
+
+   Los instrumentos musicales se han ido perfeccionando muy lentamente, debido a que han sido considerados inferiores a la voz humana.  Por lo que la música puramente instrumental, artísticamente hablando, tardó en desarrollarse.
+
+   Los instrumentos, desde el principio de nuestra era, se limitaron a acompañar o sustituir a las voces.  Tal es el caso del órgano, que era destinado a acompañar los cantos dentro de la Iglesia; del Aud, que acompañaba a los Trovadores, la
+Vielle y otros.
+
+   A pesar de ello, la Iglesia pronunció una condena durante los primeros siglos el Cristianismo, en la cual unicamente se permitía el empleo del órgano.  Tal posición de la Iglesia pesó en la suerte corrida por la música instrumental, de consagrarse al servicio exclusivo del arte profano de los Juglares, Goliardos, Minis-
+triles, Trovadores, Minnesinger y Mastersinger, entre otros.
+
+   Puede afirmarse que tal consagración se empezó a distinguir a partir del siglo XI.  Además de acompañar el canto de los Trovadores y otros, los instrumentos intervenían en la ejecución de las danzas, y, a veces, sustituían las voces en las
+composiciones polifónicas.
+
+   Entre los instrumentos musicales que gozaron de gran popularidad, entre los siglos IV al XVI, figuran los siguientes: el órgano, el Aud, la Mandolina, el Salterio, la Cítola, el Rabé, la Vihuela, la Guitarra, la Trompeta, la Lira, el Arpa, la Flauta y la Vielle.
+</p>
+
+<h1>HOUSE</h1> 
+<p>
+El house es un estilo de música electrónica de baile que se originó en Chicago, Estados Unidos, hacia comienzos de los años 1980. Inicialmente, se hizo popular en la primera mitad de los ochenta en las discotecas orientadas hacia el público afroamericano, latino1, primero en Chicago y más adelante en Nueva York y Detroit. Posteriormente llegó a Europa, antes de convertirse en un fenómeno masivo con una influencia dominante en otros estilos musicales como el pop y la música de baile desde mediados de los años 1990.
+El house está fuertemente influenciado por las variantes más soul y funk de la música disco. Generalmente imita la percusión del disco, especialmente el uso de un prominente golpe de bombo con cada beat, aunque también puede incluir poderosas líneas de bajo sintetizadas, baterías electrónicas, samples de funk y pop, y vocales potenciadas con filtros reverb o delay.
+</p>
+
+<h1> BLUES</h1> 
+<p>
+El blues es un género musical vocal e instrumental, Originario de las comunidades afroamericanas de Estados Unidos, se desarrolló a través de los espirituales, canciones de oración, canciones de trabajo, rimas inglesas, baladas escocesas e irlandesas narradas y gritos de campo. La utilización de las notas del blues y la importancia de los patrones de llamada y respuesta, tanto en la música como en las letras, son indicativos de la herencia africana-occidental de este género. Un rasgo característico del blues es el uso extensivo de las técnicas "expresivas" de la guitarra (bend, vibrato, slide), que posteriormente influirían en solos de estilos como el rock. El blues influyó en la música popular estadounidense y occidental en general, llegando a formar parte de géneros musicales como el ragtime, jazz, bluegrass, rhythm and blues, rock and roll, funk, heavy metal, hip-hop, música country y canciones pop.
+
+La frase the blues hace referencia a los blue devils (diablos azules o espíritus caídos), la depresión y la tristeza. Una de las primeras referencias a the blues puede encontrarse en la farsa Blue Devils, a farce in one act (1798) de George Colman. Posteriormente, durante el siglo XIX, esta frase fue usada eufemísticamente para hacer referencia al delírium trémens y a la policía.
+</p>
+</div>
+<div id="footer_img"></div>
+<div id="footer_player"></div>
+<div id="footer">Todos los derechos reservados &copy; <%= Time.now.strftime("%Y") %> salaloungemusic.com</div>
+</div>
