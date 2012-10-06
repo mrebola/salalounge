@@ -32174,3 +32174,309 @@ Served asset /users.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-06 14:31:14 -0500
 Served asset /application.js - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/about" for 127.0.0.1 at 2012-10-06 14:34:28 -0500
+Processing by PagesController#about as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered pages/about.html.erb within layouts/application (71.5ms)
+Completed 200 OK in 137ms (Views: 134.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-10-06 14:34:28 -0500
+Served asset /main.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:28 -0500
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:28 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:28 -0500
+Served asset /bootstrap-button.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:28 -0500
+Served asset /bootstrap-modal.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:28 -0500
+Served asset /bootstrap-tooltip.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery-1.8.1.min.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:28 -0500
+Served asset /jquery-1.8.1.min.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:28 -0500
+Served asset /pages.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:28 -0500
+Served asset /projects.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/radio.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:28 -0500
+Served asset /radio.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/swfobject.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:28 -0500
+Served asset /swfobject.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:28 -0500
+Served asset /users.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:28 -0500
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2012-10-06 14:34:31 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"7B7ruQIXOLIkc0XxyLK8k6co8lXB82K+2INT1xws1/w="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 17ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-06 14:34:31 -0500
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-10-06 14:34:31 -0500
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:31 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:31 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:31 -0500
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:31 -0500
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:31 -0500
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.8.1.min.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:31 -0500
+Served asset /jquery-1.8.1.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:31 -0500
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:31 -0500
+Served asset /projects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/radio.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:31 -0500
+Served asset /radio.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/swfobject.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:31 -0500
+Served asset /swfobject.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:31 -0500
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:31 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/site.jpg" for 127.0.0.1 at 2012-10-06 14:34:31 -0500
+Served asset /site.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2012-10-06 14:34:34 -0500
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 13ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-10-06 14:34:34 -0500
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:34 -0500
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:34 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:34 -0500
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:34 -0500
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:34 -0500
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.8.1.min.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:34 -0500
+Served asset /jquery-1.8.1.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:34 -0500
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:34 -0500
+Served asset /projects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/radio.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:34 -0500
+Served asset /radio.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/swfobject.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:34 -0500
+Served asset /swfobject.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:34 -0500
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:34 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/programacion" for 127.0.0.1 at 2012-10-06 14:34:37 -0500
+Processing by PagesController#programacion as HTML
+  Rendered pages/programacion.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 34ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-10-06 14:34:38 -0500
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:38 -0500
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:38 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:38 -0500
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:38 -0500
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:38 -0500
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.8.1.min.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:38 -0500
+Served asset /jquery-1.8.1.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:38 -0500
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:38 -0500
+Served asset /projects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/radio.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:38 -0500
+Served asset /radio.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/swfobject.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:38 -0500
+Served asset /swfobject.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:38 -0500
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:38 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/contacto" for 127.0.0.1 at 2012-10-06 14:34:39 -0500
+Processing by PagesController#contacto as HTML
+  Rendered pages/contacto.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 13ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-10-06 14:34:39 -0500
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:39 -0500
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:39 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:39 -0500
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:39 -0500
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:39 -0500
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.8.1.min.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:39 -0500
+Served asset /jquery-1.8.1.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:39 -0500
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:39 -0500
+Served asset /projects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/radio.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:39 -0500
+Served asset /radio.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/swfobject.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:39 -0500
+Served asset /swfobject.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:39 -0500
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-06 14:34:39 -0500
+Served asset /application.js - 304 Not Modified (1ms)
